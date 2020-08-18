@@ -29,7 +29,7 @@
                   <th>{{$ride->distance}} km</th>
                   <th>{{$ride->tax}} kr</th>
                   <th>{{$ride->amount}} kr</th>
-                  <th>{{$ride->user_id}} {{$ride->user->name}}</th>
+                  <th>{{$ride->user->name}}</th>
                 </tr>
               @endforeach
                 <tr>

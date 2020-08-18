@@ -2,9 +2,10 @@
 
 @section('content')
   <h1>{{$ride->title}}</h1>
-  <small>Date: {{$ride->date}}</small>
-  <small>Distance: {{$ride->distance}}</small>
-  <small>Tax: {{$ride->tax}}</small>
+  <p>Date: {{$ride->date}}</p>
+  <p>Distance: {{$ride->distance}}</p>
+  <p>Tax: {{$ride->tax}}</p>
+  <p>Amount: {{$ride->amount}}</p>
 
   @if(!Auth::guest())
     @if(Auth::user()->id == $ride->user_id)
