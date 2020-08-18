@@ -6,4 +6,8 @@ See it in action at carshare.alvineandersson.se
 
 ## Techniques
 
-This application is made using Laravel/PHP & MySQL. 
+This application is made using Laravel/PHP & MySQL.
+
+## Screenshots
+
+![picture](public/screenshot.png)
