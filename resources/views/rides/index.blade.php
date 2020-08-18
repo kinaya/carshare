@@ -24,7 +24,7 @@
               </tr>
               @foreach($rides as $ride)
                 <tr>
-                  <th><a href="/klumpen/public/rides/{{$ride->id}}">{{$ride->title}}</a></th>
+                  <th><a href="/rides/{{$ride->id}}">{{$ride->title}}</a></th>
                   <th>{{$ride->date}}</th>
                   <th>{{$ride->distance}} km</th>
                   <th>{{$ride->tax}} kr</th>

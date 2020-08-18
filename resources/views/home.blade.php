@@ -24,7 +24,7 @@
               </tr>
               @foreach($rides as $ride)
                 <tr>
-                  <th><a href="/klumpen/public/rides/{{$ride->id}}">{{$ride->title}}</a></th>
+                  <th><a href="/rides/{{$ride->id}}">{{$ride->title}}</a></th>
                   <th>{{$ride->date}}</th>
                   <th>{{$ride->distance}} km</th>
                   <th>{{$ride->tax}} kr</th>
@@ -44,7 +44,7 @@
           @else
             <p>There are not tides this month</p>
           @endif
-        <a href="/klumpen/public/rides" class="btn btn-primary float-right">See all rides</a>
+        <a href="/rides" class="btn btn-primary float-right">See all rides</a>
       </div>
   </div>
 
@@ -57,7 +57,7 @@
               </div>
           @endif
         <p>This is where the calendar will be.</p>
-        <a href="/klumpen/public/calendar" class="btn btn-primary float-right">See calendar</a>
+        <a href="/calendar" class="btn btn-primary float-right">See calendar</a>
       </div>
   </div>
 

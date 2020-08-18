@@ -25,11 +25,11 @@
             <div class="container">
                 @guest
                   <a class="navbar-brand" href="{{ url('/') }}">
-                      {{ config('app.name', 'Klumpen') }}
+                      {{ config('app.name', 'Car Share') }}
                   </a>
                 @else
                   <a class="navbar-brand" href="{{ url('/home') }}">
-                      {{ config('app.name', 'Klumpen') }}
+                      {{ config('app.name', 'car Share') }}
                   </a>
                 @endguest
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -40,23 +40,23 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                       <li class="nav-item">
-                        <a class="nav-link" href="/klumpen/public/rides/create">{{ __('Add ride') }}</a>
+                        <a class="nav-link" href="/rides/create">{{ __('Add ride') }}</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="/klumpen/public/calendar">{{ __('Book ride') }}</a>
+                        <a class="nav-link" href="/calendar">{{ __('Book ride') }}</a>
                       </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                          <a class="nav-link" href="/klumpen/public/about">{{ __('About') }}</a>
+                          <a class="nav-link" href="/about">{{ __('About') }}</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="/klumpen/public/rides">{{ __('Rides') }}</a>
+                          <a class="nav-link" href="/rides">{{ __('Rides') }}</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="/klumpen/public/calendar">{{ __('Calendar') }}</a>
+                          <a class="nav-link" href="/calendar">{{ __('Calendar') }}</a>
                         </li>
                         <!-- Authentication Links -->
                         @guest
@@ -70,7 +70,7 @@
                             @endif
                         @else
                             <li class="nav-item">
-                              <a class="nav-link" href="/klumpen/public/users/{{Auth::user()->id}}">{{ auth::user()->name }}</a>
+                              <a class="nav-link" href="/users/{{Auth::user()->id}}">{{ auth::user()->name }}</a>
                             </li>
                             <li class="nav-item">
                               <a class="nav-link" href="{{ route('logout') }}"
