@@ -11,3 +11,5 @@ This application is made using Laravel/PHP & MySQL.
 ## Screenshots
 
 ![picture](public/screenshot.png)
+
+[![screenshoot](public/screenshot.png)](public/screenshot.png)
